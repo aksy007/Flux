@@ -1,8 +1,8 @@
 import React from "react";
-import { Loader } from "../component/loader";
-import { Home } from "../component/home";
-import About from "../component/about";
-import { NotFound } from "../component/404";
+import { Loader } from "../components/Loader";
+import { Home } from "../components/Home";
+import About from "../components/About";
+import { NotFound } from "../components/404";
 
 const routeComponentMapping: { [key: string]: React.ComponentType } = {
   "/": Loader,
