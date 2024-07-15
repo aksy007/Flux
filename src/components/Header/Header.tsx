@@ -3,6 +3,7 @@ import { FLUX } from './HeaderData';
 import PersonIcon from '@mui/icons-material/Person';
 import CampaignIcon from '@mui/icons-material/Campaign';
 import Search from '../Search/Search';
+import styles from './Header.module.scss';
 
 const AccountIcon = () => {
 	const handleAccountCLick = () => {
@@ -21,13 +22,19 @@ const NoticeIcon = () => {
 };
 
 const Header: React.FC = () => {
+	const handleLogoClick = () => {
+		// navagate to home page
+	};
+
 	return (
-		<header>
-			{FLUX}
-			<Search />
-			{NoticeIcon()}
-			{AccountIcon()}
-		</header>
+		<div className={styles.container}>
+			<header onClick={handleLogoClick}>{FLUX}</header>
+			<div>
+				<Search />
+				<NoticeIcon />
+				<AccountIcon />
+			</div>
+		</div>
 	);
 };
 
