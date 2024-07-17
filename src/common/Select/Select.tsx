@@ -4,7 +4,10 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import { DropdownOption, SelectDropdownProps } from './SelectData';
+import { DropdownOption, SelectDropdownProps,  selectStyles } from './SelectData';
+import styles from "./Select.module.scss";
+
+
 
 const SelectDropdown = <T extends DropdownOption>({
 	DropdownList,
@@ -22,7 +25,7 @@ const SelectDropdown = <T extends DropdownOption>({
 
 	return (
 		<Box
-			sx={{ minWidth: 120, borderRadius: 1 }}
+			sx={ selectStyles }
 			className={customClass}
 		>
 			<FormControl fullWidth>
