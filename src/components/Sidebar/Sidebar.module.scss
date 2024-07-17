@@ -1,0 +1,81 @@
+.containerOpen, .containerClosed {
+	background-color: rgb(92, 92, 92);
+	height: calc(100vh - 64px);
+	position: relative;
+	transition: width 0.3s ease-in-out;
+	color: #F0F0F0;
+  }
+  
+.containerOpen {
+	width: 250px;
+}
+  
+.containerClosed {
+	width: 50px;
+
+	.logo {
+		width: 35px;
+		height: 35px;
+		border-radius: 50%;
+		margin: 8px;
+	}
+}
+  
+.content {
+	opacity: 1;
+	transition: opacity 0.3s ease-in;
+}
+
+.contentHidden {
+	opacity: 0;
+	transition: opacity 0.3s ease-out;
+}
+  
+.organisation {
+	display: flex;
+	place-items: center;
+	padding: 8px 16px;
+	border-bottom: 1px solid;
+
+	.logo {
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+	}
+
+	span {
+		font-size: 24px;
+		font-weight: 500;
+		margin: 0 8px;
+	}
+}
+
+.dropdown {
+	margin: 16px;
+}
+
+.optionsList {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0 16px 16px 16px;
+}
+
+.option {
+	font-size: 18px;
+	font-family: 600;
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	margin: 8px 0;
+
+	>span:last-child {
+		padding: 0 0 4px 12px;
+	}
+}
+
+.arrowIcon {
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+}
