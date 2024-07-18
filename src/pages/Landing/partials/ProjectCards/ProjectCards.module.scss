@@ -1,0 +1,43 @@
+.projectCardList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 24px;
+}
+  
+.projectCard {
+    width: 250px;
+    height: 120px;
+    background-color: rgb(92, 92, 92);
+    color: #F0F0F0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+.projectCardName {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+  
+.projectCardOwner {
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #fff8f8;
+}
+
+.projectCardUpdatedAt {
+    font-size: 12px; 
+    color: #fff8f8;
+  }
+  
+  .projectCardUpdatedDate {
+    font-weight: bold; 
+    color: #fff8f8;
+  }
+  
+  

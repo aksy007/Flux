@@ -1,12 +1,11 @@
 import React from "react";
 import { Loader } from "../components/Loader";
-import { Home } from "../components/Home";
 import About from "../components/About";
 import { NotFound } from "../components/404";
+import LandingPage from "../pages/Landing/Landing";
 
 const routeComponentMapping: { [key: string]: React.ComponentType } = {
-  "/": Home,
-  "/home": Home,
+  "/": LandingPage,
   "/about": About,
   "/*": Loader
 };
