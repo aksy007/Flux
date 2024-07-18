@@ -10,11 +10,15 @@ const App: React.FC = () => {
 	const Component = renderComponent(location?.pathname);
 
 	return (
-		<div className={styles.main}>
+		<>
 			<Header />
-			<Sidebar />
-			<main className={styles.componentPage}>{Component}</main>
-		</div>
+			<div className={styles.container}>
+				<Sidebar />
+				<div className={styles.component}>
+					{Component}
+				</div>
+			</div>
+		</>
 	);
 };
 

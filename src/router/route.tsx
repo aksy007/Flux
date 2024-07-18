@@ -5,9 +5,10 @@ import About from "../components/About";
 import { NotFound } from "../components/404";
 
 const routeComponentMapping: { [key: string]: React.ComponentType } = {
-  "/": Loader,
+  "/": Home,
   "/home": Home,
   "/about": About,
+  "/*": Loader
 };
 
 // Function to render the component based on the pathname
