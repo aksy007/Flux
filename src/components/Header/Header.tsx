@@ -2,7 +2,7 @@ import * as React from 'react';
 import { FLUX } from './HeaderData';
 import PersonIcon from '@mui/icons-material/Person';
 import CampaignIcon from '@mui/icons-material/Campaign';
-import Search from '../Search/Search';
+import Search from '../../common/Search/Search';
 import styles from './Header.module.scss';
 
 const AccountIcon = () => {
