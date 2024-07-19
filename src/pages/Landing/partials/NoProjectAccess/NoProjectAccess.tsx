@@ -2,15 +2,10 @@ import React from 'react';
 import { NoProjectAccessProps } from '../../LandingData';
 import Button from '../../../../common/Button/Button';
 import styles from './NoProjectAccess.module.scss';
-import { useNavigate } from 'react-router-dom';
 
-const NoProjectAccess: React.FC<NoProjectAccessProps> = () => {
-	const navigate = useNavigate();
-	const handleCreateNewProject = () => {
-		// TODO: Navigate to new project page
-		navigate('/new-project');
-	};
-
+const NoProjectAccess: React.FC<NoProjectAccessProps> = ({
+	handleCreateNewProject,
+}) => {
 	return (
 		<div className={styles.container}>
 			<div>

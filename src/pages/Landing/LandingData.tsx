@@ -10,7 +10,9 @@ export interface ProjectList {
 	lastUpdatedAt: string;
 }
 export interface LandingPageProps {}
-export interface NoProjectAccessProps {}
+export interface NoProjectAccessProps {
+	handleCreateNewProject: () => void;
+}
 export interface ProjectCardsProps {
 	userAuthorisedProjects: ProjectList[];
 }
