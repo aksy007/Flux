@@ -1,0 +1,17 @@
+.container {
+	display: block;
+	padding: 16px 24px;
+}
+
+.header {
+	display: flex;
+	place-items: center;
+
+	> div:first-child {
+		margin-right: 24px;
+	}
+}
+
+.main {
+	margin: 24px 0;
+}

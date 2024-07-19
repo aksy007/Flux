@@ -26,11 +26,18 @@ const Header: React.FC = () => {
 		// navagate to home page
 	};
 
+	const handleSerch = () => {
+		// TODO: handle search
+	};
+
 	return (
 		<div className={styles.container}>
 			<header onClick={handleLogoClick}>{FLUX}</header>
 			<div>
-				<Search />
+				<Search
+					placeholderText={'Search Projects, Issues'}
+					handleSerch={handleSerch}
+				/>
 				<NoticeIcon />
 				<AccountIcon />
 			</div>
