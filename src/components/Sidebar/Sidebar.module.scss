@@ -1,15 +1,16 @@
-.containerOpen, .containerClosed {
+.containerOpen,
+.containerClosed {
 	background-color: rgb(92, 92, 92);
 	height: calc(100vh - 64px);
 	position: relative;
 	transition: width 0.3s ease-in-out;
-	color: #F0F0F0;
-  }
-  
+	color: #f0f0f0;
+}
+
 .containerOpen {
 	width: 250px;
 }
-  
+
 .containerClosed {
 	width: 50px;
 
@@ -20,7 +21,7 @@
 		margin: 8px;
 	}
 }
-  
+
 .content {
 	opacity: 1;
 	transition: opacity 0.3s ease-in;
@@ -30,7 +31,7 @@
 	opacity: 0;
 	transition: opacity 0.3s ease-out;
 }
-  
+
 .organisation {
 	display: flex;
 	place-items: center;
@@ -69,7 +70,7 @@
 	justify-content: center;
 	margin: 8px 0;
 
-	>span:last-child {
+	> span:last-child {
 		padding: 0 0 4px 12px;
 	}
 }

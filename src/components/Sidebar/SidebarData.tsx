@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import GroupsIcon from '@mui/icons-material/Groups';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
@@ -12,10 +12,9 @@ export interface ProjectListType {
 }
 
 export interface UserOptionType {
-	icon: React.FC,
-	option: string,
-	link: string
-
+	icon: React.FC;
+	option: string;
+	link: string;
 }
 
 const InitialProject: ProjectListType = {
@@ -26,21 +25,21 @@ const InitialProject: ProjectListType = {
 
 const UserOptions: UserOptionType[] = [
 	{
-	  icon: AssignmentIcon, 
-	  option: "Issues",
-	  link: "/issues",
+		icon: AssignmentIcon,
+		option: 'Issues',
+		link: '/issues',
 	},
 	{
-	  icon: GroupsIcon,
-	  option: "Team",
-	  link: "/team", 
+		icon: GroupsIcon,
+		option: 'Team',
+		link: '/team',
 	},
 	{
-	  icon: RocketLaunchIcon, 
-	  option: "Releases",
-	  link: "/releases",
+		icon: RocketLaunchIcon,
+		option: 'Releases',
+		link: '/releases',
 	},
-  ];
+];
 
 const ProjectList: ProjectListType[] = [
 	{
