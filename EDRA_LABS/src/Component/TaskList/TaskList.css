@@ -1,0 +1,31 @@
+.taskList {
+  padding: 16px;
+  border-radius: 12px;
+  background-color: #101204;
+  margin: 16px;
+  width: 360px;
+  height: max-content;
+}
+
+.listTitle {
+  font-weight: bold;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.listFn {
+  span {
+    background: #22272b;
+    padding: 4px 8px;
+  }
+}
+
+.popup {
+  display: flex;
+  margin: 16px;
+}
