@@ -1,5 +1,0 @@
-The user should be able to create lists.
-The user should be able to create cards inside a list.
-The user should be able to re-arrange card orders within a list.
-The user should be able to move a card from one list to another by drag-dropping.
-The user should be able to delete a list, and all the cards inside it should be deleted on their own.
