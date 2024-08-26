@@ -2,6 +2,7 @@ import React from 'react';
 import { ProjectCardsProps, ProjectCardProps } from '../../LandingData';
 import styles from './ProjectCards.module.scss';
 import { useNavigate } from 'react-router-dom';
+import Button from '../../../../common/Button/Button';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 	const navigate = useNavigate();
@@ -31,7 +32,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 const ProjectCards: React.FC<ProjectCardsProps> = ({
 	userAuthorisedProjects,
 }) => {
+	const navigate = useNavigate();
+	const handleCreateNewProject = () => {
+		// TODO: Navigate to new project page
+		navigate('/new-project');
+	};
 	return (
+	<>
 		<div className={styles.projectCardList}>
 			{userAuthorisedProjects.map((project) => (
 				<ProjectCard
@@ -40,6 +47,13 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({
 				/>
 			))}
 		</div>
+		<div className={styles.newProject}>
+		<Button
+			onClick={handleCreateNewProject}
+			btnText='Create New Project'
+		/>
+		</div>
+	</>
 	);
 };
 
