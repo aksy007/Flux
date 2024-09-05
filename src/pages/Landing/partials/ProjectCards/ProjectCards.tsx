@@ -1,8 +1,11 @@
 import React from 'react';
-import { ProjectCardsProps, ProjectCardProps } from '../../LandingData';
 import styles from './ProjectCards.module.scss';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../../../common/Button/Button';
+import { ProjectCardsProps, ProjectCardProps } from '../../LandingData';
+import { useModal } from '../../../../components/Modal/ModalData';
+import Modal from '../../../../components/Modal/Modal';
+import { Loader } from '../../../../components/Loader';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 	const navigate = useNavigate();
@@ -32,11 +35,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 const ProjectCards: React.FC<ProjectCardsProps> = ({
 	userAuthorisedProjects,
 }) => {
-	const navigate = useNavigate();
+	const { showModal, openModal, closeModal } = useModal();
 	const handleCreateNewProject = () => {
-		// TODO: Navigate to new project page
-		navigate('/new-project');
+		// TODO: open Modal to create new project
+		openModal();
 	};
+
 	return (
 	<>
 		<div className={styles.projectCardList}>
@@ -53,6 +57,16 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({
 			btnText='Create New Project'
 		/>
 		</div>
+		{
+			showModal 
+			? <Modal 
+				show={showModal}
+				handleClose={closeModal} 
+			>
+				<Loader />
+			</Modal >
+			: null 
+		}
 	</>
 	);
 };
