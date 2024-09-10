@@ -44,3 +44,13 @@
 .btn.outline:hover {
 	background-color: #f0f0f0;
 }
+
+.btn.disabled {
+    background-color: #ccc;
+    color: white;
+    cursor: default;
+}
+
+.btn.disabled:hover {
+    background-color: #ccc;
+}

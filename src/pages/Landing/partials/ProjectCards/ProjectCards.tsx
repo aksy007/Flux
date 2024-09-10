@@ -5,7 +5,7 @@ import Button from '../../../../common/Button/Button';
 import { ProjectCardsProps, ProjectCardProps } from '../../LandingData';
 import { useModal } from '../../../../components/Modal/ModalData';
 import Modal from '../../../../components/Modal/Modal';
-import { Loader } from '../../../../components/Loader';
+import NewProject from '../../../../components/NewProject/NewProject';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 	const navigate = useNavigate();
@@ -63,7 +63,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({
 				show={showModal}
 				handleClose={closeModal} 
 			>
-				<Loader />
+				<NewProject handleClose={closeModal} />
 			</Modal >
 			: null 
 		}

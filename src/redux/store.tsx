@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { AppReducer, UserInfoState } from "./reducer";
+import { AppReducer, UserState } from "./reducer";
 
 // Define the type for the store state
 export type RootState = {
-  AppReducer: UserInfoState;
+  AppReducer: UserState;
 };
 
 const store = configureStore<RootState>({
