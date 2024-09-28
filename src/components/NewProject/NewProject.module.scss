@@ -1,47 +1,47 @@
 .container {
-    display: block;
+  display: block;
 }
 
-.projectName{
+.projectName {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+
+  span {
+    margin-right: 12px;
+  }
+
+  .projectNameInput {
+    width: 350px;
+    height: 30px;
+    padding: 0 0 0 10px;
+    border: 1px solid;
+    border-radius: 5px;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
-    margin-bottom: 24px;
-
-    span {
-        margin-right: 12px;
-    }
-
-    .projectNameInput {
-        width: 350px;
-        height: 30px;
-        padding: 0 0 0 10px;
-        border: 1px solid;
-        border-radius: 5px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
+    align-items: center;
+  }
 }
 
 .textareaContainer {
-    display: flex;
-    align-items: flex-start;
-    
-    span {
-        margin-right: 16px;
-    }
+  display: flex;
+  align-items: flex-start;
 
-    textarea {
-        resize: none;
-        padding: 10px;
-        border: 1px solid;
-        border-radius: 5px;
-    }
+  span {
+    margin-right: 16px;
+  }
+
+  textarea {
+    resize: none;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+  }
 }
 
 .btn {
-    margin-top: 20px;
-    display: grid;
-    place-items: center;
+  margin-top: 20px;
+  display: grid;
+  place-items: center;
 }

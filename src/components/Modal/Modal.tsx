@@ -1,6 +1,6 @@
-import React, { ReactNode } from 'react';
-import CloseIcon from '@mui/icons-material/Close';
-import styles from  './Modal.module.scss';
+import React, { ReactNode } from "react";
+import CloseIcon from "@mui/icons-material/Close";
+import styles from "./Modal.module.scss";
 
 interface ModalProps {
   handleClose: () => void;
@@ -9,9 +9,7 @@ interface ModalProps {
 }
 
 const Modal: React.FC<ModalProps> = ({ handleClose, show, children }) => {
-
-  return (
-    show ? 
+  return show ? (
     <div className={styles.modal}>
       <div className={styles.modalOverlay} onClick={handleClose} />
       <section className={styles.main}>
@@ -21,8 +19,7 @@ const Modal: React.FC<ModalProps> = ({ handleClose, show, children }) => {
         </div>
       </section>
     </div>
-    : null 
-  );
+  ) : null;
 };
 
 export default Modal;

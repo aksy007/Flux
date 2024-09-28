@@ -1,25 +1,25 @@
 .whiteSelect {
-	.MuiInputLabel-root {
-		color: #f0f0f0 !important;
-	}
+  .MuiInputLabel-root {
+    color: #f0f0f0 !important;
+  }
 
-	.MuiOutlinedInput-root {
-		color: #f0f0f0 !important;
+  .MuiOutlinedInput-root {
+    color: #f0f0f0 !important;
 
-		& .MuiOutlinedInput-notchedOutline {
-			border-color: #f0f0f0 !important;
+    & .MuiOutlinedInput-notchedOutline {
+      border-color: #f0f0f0 !important;
 
-			&:hover .MuiOutlinedInput-notchedOutline {
-				border-color: #f0f0f0 !important;
-			}
+      &:hover .MuiOutlinedInput-notchedOutline {
+        border-color: #f0f0f0 !important;
+      }
 
-			&.Mui-focused .MuiOutlinedInput-notchedOutline {
-				border-color: #f0f0f0 !important;
-			}
-		}
+      &.Mui-focused .MuiOutlinedInput-notchedOutline {
+        border-color: #f0f0f0 !important;
+      }
+    }
 
-		.MuiSelect-icon {
-			color: #f0f0f0 !important;
-		}
-	}
+    .MuiSelect-icon {
+      color: #f0f0f0 !important;
+    }
+  }
 }

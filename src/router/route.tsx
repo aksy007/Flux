@@ -8,18 +8,18 @@ import Project from "../pages/Project/Project";
 const routeComponentMapping: { [key: string]: React.ComponentType } = {
   "/": LandingPage,
   "/project": Project,
-  "/*": Loader
+  "/*": Loader,
 };
 
 // Function to render the component based on the pathname
 export const renderComponent = (pathname: string): React.ReactElement => {
   try {
-    const pageUrl = pathname?.split('/');
-    const formatedPathname = pageUrl?.[0] === '' ? `/${pageUrl[1]}` :  pathname;
+    const pageUrl = pathname?.split("/");
+    const formatedPathname = pageUrl?.[0] === "" ? `/${pageUrl[1]}` : pathname;
     const Component = routeComponentMapping?.[formatedPathname] || null;
     return Component ? <Component /> : <Loader />;
   } catch (error) {
-      return <NotFound />;
+    return <NotFound />;
   }
 };
 

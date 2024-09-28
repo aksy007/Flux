@@ -1,23 +1,23 @@
 .container {
-	width: 350px;
-	height: 30px;
-	position: relative;
+  width: 350px;
+  height: 30px;
+  position: relative;
 }
 
 .search {
-	width: 350px;
-	height: 30px;
-	padding: 0 0 0 10px;
-	border: 1px solid;
-	border-radius: 5px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+  width: 350px;
+  height: 30px;
+  padding: 0 0 0 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .customSearchIcon {
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }

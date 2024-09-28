@@ -1,3 +1,3 @@
-const FLUX = 'Flux';
+const FLUX = "Flux";
 
 export { FLUX };
